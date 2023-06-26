@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$color-pink: #C92071;
+$fonte-padrao: 'Roboto';
+
+.header {    
+       topo {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;  
+        
+    }
+    logo {
+        color: $color-pink;
+    }
+}
