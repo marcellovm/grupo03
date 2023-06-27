@@ -1,16 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 $color-pink: #C92071;
-$fonte-padrao: 'Roboto';
+$color-ligth-gray: #f5f5f5;
+$color-light-gray-new: #6666;
+$color-dark-gray: #474747;
 
-.header {    
-       topo {
-        width: 90%;
-        margin: auto;
-        margin-top: 20px;  
-        
-    }
-    logo {
-        color: $color-pink;
-    }
+.navbar {
+    margin-bottom: 30px;
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 5px;
+                width: 10%;
+            }
+        }
+        .input-text {
+            display: flex;
+            align-items: center;
+            width: 40%;
+            .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+                background-color: $color-ligth-gray;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                width: 90%;
+                label {
+                    color: $color-light-gray-new;
+                }
+                .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+                    border: none;
+                }        
+            }
+            .search-click {
+                display: flex;
+                background-color: $color-ligth-gray;
+                height: 40px;
+                align-items: center;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                padding-right: 5px;
+
+                path {
+                    color: $color-light-gray-new;
+                }
+            }
+        }
+        a {
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            color: $color-pink;
+
+            span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: $color-dark-gray;
+                line-height: 28px;   
+                letter-spacing: 0.75px;
+                text-decoration-line: underline; 
+            }
+        }
+        Button {
+            background-color: $color-pink;
+            text-transform: none;
+            width: 100px;
+        }
 }
