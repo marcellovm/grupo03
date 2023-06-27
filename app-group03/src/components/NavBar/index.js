@@ -18,12 +18,12 @@ export default function NavBar() {
                        
                     </div>
                     <div className="input-text">
-                        <TextField id="outlined-basic" label="Digite aqui para pesquisar..." variant="outlined" size="small"/>
+                        <TextField id="outlined-basic" label="Pesquisar produto..." variant="outlined" size="small"/>
                         <div className="search-click">
                             <span><SearchIcon/></span>
                         </div>
                     </div>
-                    <Link to='/'><span>Cadastra-se</span></Link>
+                    <Link to='/'><span>Cadastre-se</span></Link>
                     <Link to='/'><Button variant="contained">Entrar</Button></Link>
                     <Link className="shoppingCart" to='/'><ShoppingCartOutlinedIcon/></Link>
                 </Box>

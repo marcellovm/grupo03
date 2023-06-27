@@ -6,29 +6,34 @@ $color-light-gray-new: #6666;
 $color-dark-gray: #474747;
 
 .navbar {
+    
     margin-bottom: 30px;
         .navbar-logo {
             display: flex;
             align-items: center;
             img {
+                border-radius: 5px;
                 margin-right: 5px;
-                width: 10%;
+                width: 35px;
             }
         }
         .input-text {
             display: flex;
             align-items: center;
-            width: 40%;
+            width: 40%;      
+           
             .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
                 background-color: $color-ligth-gray;
                 border-top-left-radius: 8px;
                 border-bottom-left-radius: 8px;
                 width: 90%;
+                
                 label {
                     color: $color-light-gray-new;
                 }
-                .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-                    border: none;
+                
+                .css-1d3z3hw-MuiOutlinedInput-notchedOutline {                    
+                    border: none;                                     
                 }        
             }
             .search-click {
