@@ -63,11 +63,21 @@ $color-dark-gray: #474747;
                 line-height: 28px;   
                 letter-spacing: 0.75px;
                 text-decoration-line: underline; 
-            }
+            }           
+            
+        }
+        .css-i4bv87-MuiSvgIcon-root {
+            color: $color-pink;
+        }
+        .css-fvc8ir-MuiBadge-badge {
+            background-color: $color-pink;
+            color: #ffffff;            
         }
         Button {
             background-color: $color-pink;
             text-transform: none;
             width: 100px;
         }
+        
+        
 }

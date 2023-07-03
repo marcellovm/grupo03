@@ -1,11 +1,16 @@
 import {Link} from "react-router-dom";
-import {Box, Button, Container, TextField} from "@mui/material";
+import {Box, Button, Container, TextField, Typography} from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Logo from './img/dc-logo.png';
 import './styles.scss';
+import * as React from 'react';
 
-export default function NavBar() {
+import Badge from '@mui/material/Badge';
+
+
+
+export default function NavBar() {         
     return (
         <div className="navbar">
             <Container fixed>
@@ -23,11 +28,17 @@ export default function NavBar() {
                             <span><SearchIcon/></span>
                         </div>
                     </div>
-                    <Link to='/'><span>Cadastre-se</span></Link>
+                    <Link to='/'><span>Cadastre-se</span></Link>                    
                     <Link to='/'><Button variant="contained">Entrar</Button></Link>
-                    <Link className="shoppingCart" to='/'><ShoppingCartOutlinedIcon/></Link>
+                    <Link to='/'>   
+                        <Badge badgeContent={2}>
+                             <ShoppingCartOutlinedIcon/>   
+                        </Badge>                                                                                       
+                    </Link> 
+                                                 
                 </Box>
-            </Container>
+            </Container>   
+                      
         </div>        
     )
 }
