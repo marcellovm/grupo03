@@ -14,7 +14,7 @@ export default function App() {
         <Route path="/categorias" element={<Categories/>}/>
         <Route path="/produtos" element={<Products/>}/>
         <Route path="/produtos/:id" element={<ProductsDetails/>}/>
-        <Route path="meus-pedidos" element={<Orders/>}/>
+        <Route path="/meus-pedidos" element={<Orders/>}/>
       </Routes>
     </BrowserRouter>
   );
